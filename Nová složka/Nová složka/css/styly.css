@@ -1,0 +1,137 @@
+/* CSS Document */
+body {
+  /* Typ p�sma bude Arial nebo sans-serif */
+  font-family: Arial, sans-serif;
+  /* Barva pozad� bude sv�tle �ed� */
+  background-color: rgb(189, 187, 187);
+}
+
+#obal {
+  /* Maxim�ln� ���ka 960 px */
+  max-width: 960px;
+  /* Nastav okraje tak, aby byl blok obal na str�nce vycentrov�n */
+  margin:auto;
+  /* Ohrani�en� - pln� �ed� ��ra o tlou��ce 1 pixel  */
+  border: solid 1px;
+  /* Vnit�n� odsazen� - 20 pixel� */
+  padding: 20px;
+  /* B�l� barva pozad� */
+  background-color: white;
+  /* Barva textu - tmav� �ed� odst�n, �estn�ctkov� hodnoty 3 */
+color: grey;
+}
+
+nav {
+  background-color: #222;
+  margin: -20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 1.1em;
+  color: lightgray;
+}
+
+/* Pro v�echny odkazy v bloku navigace */nav a {
+  padding: 19px;
+  /* Odkazy nebudou podtr�eny */
+  text-decoration: none;
+  color: lightgray;
+}
+
+/* Pro v�echny odkazy v bloku navigace p�i p�ejet� kurzoru my�i */nav a:hover  {
+  color: white;
+  background-color: royalblue;
+}
+
+h1 {
+  /* Nadpis bude vycentrov�n */
+  text-align: center;
+  /* Velikost nadpisu bude dvojn�sobn� vzhledem k z�kladn� velikosti p�sma */
+  text-size-adjust: 200%;
+  /* Nadpis bude tu�n� */
+  font-weight: bold;
+  /* Barva nadpisu bude toto�n� s barvou zv�razn�n�ho odkazu */
+  color:royalblue;
+  /* Nadpis bude vyps�n velk�mi p�smeny */
+  text-transform: uppercase;
+  /* V��ka ��dku nadpisu bude 2em */
+  line-height: 2em;
+  
+}
+
+/* Plat� pro nadpisy h2 i h3 */ h2, h3 {
+  font-weight: 200; 
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: rgb(102,153,0);
+}
+
+h3 { 
+  font-size: 1.2em;
+  /* Nadpisy budou podtr�eny tenkou te�kovanou �arou, jej� barva bude shodn� s barvou p�sma */ 
+  
+  
+}
+
+p, li {
+  line-height: 1.5em;
+  /* Horn� a spodn� okraj odstavc� i odr�ek budou odsazeny o hodnotu 1em */
+  margin: 1em;
+}
+
+p {
+  /* Text odstavc� bude zarovn�n do bloku */
+  text-align: left;
+}
+
+li {
+  /* Nastavte styl odr�ek tak, aby odpov�dal p�edloze (�tvercov� odr�ka) */
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+
+/* Nastavte pravidlo pro v�echny tu�n� a mod�e zv�razn�n� texty v odr�k�ch. */
+ul bold{
+  color:rgb(0, 136, 255);
+  font-weight: bold;
+}
+
+/* Nastavte pravidlo pro v�echny odstavce-pozn�mky: 
+
+    * na lev�m okraji bude �ed� ohrani�en� 10px siln�
+    * text bude zleva odsazen o 50 pixel�
+    * pou�it� font bude o 10% men�� ne� z�kladn� p�smo
+    * p�smo bude naklon�n� (kurz�va)
+*/
+ .poznamka {
+  border-left: 10px solid grey;
+  padding-left: 50px;
+  font-size: 90%;
+  font-style: italic;
+}
+
+footer {
+  color: gray;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 80%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+/* Nastavte pravidla pro zna�ky vlo�en� do textu �vodn�ho odstavce,
+   aby kone�n� vzheld textu odpov�dal p�edloze. */
+   abbr{
+     text-decoration-color: red
+   }
+   mark{
+     background-color: green;
+     color: white;
+   }
+
